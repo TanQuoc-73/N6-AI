@@ -18,6 +18,6 @@ initWebRoute(app);
 let port = process.env.PORT || 6969;
 //PORT ===underfind => PORT = 6969 : nếu server không chạy thì dẫn về port 6969
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(`Backend Nodejs is running on port ${port}`);
 })
