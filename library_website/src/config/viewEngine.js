@@ -5,5 +5,7 @@ let configViewEngine = (app) => {
     app.set('view engine', 'ejs');
     app.set('views', '/library_website/src/server.js');
     //config static file
-    app.use(express.static('./src/public'));
+    app.use(express.static('/library_website/src/public'));
 }
+
+module.exports = configViewEngine;
